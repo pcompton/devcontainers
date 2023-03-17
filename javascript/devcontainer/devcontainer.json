@@ -1,0 +1,11 @@
+{
+  "image": "philcompton/devcontainer-javascript:latest",
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.*": "/usr/bin/zsh"
+      }
+    }
+  }
+}
