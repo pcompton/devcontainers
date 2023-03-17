@@ -1,10 +1,10 @@
 {
-  "image": "philcompton/devcontainer-python:latest",
+  "image": "philcompton/devcontainer-r:latest",
   "containerUser": "vscode",
   "customizations": {
     "vscode": {
       // Add the IDs of extensions you want installed when the container is created.
-      "extensions": ["ms-python.vscode-pylance"],
+      "extensions": ["reditorsupport.r"],
       "settings": {
         "terminal.integrated.shell.*": "/usr/bin/zsh"
       }
