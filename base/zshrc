@@ -2,7 +2,7 @@ export ZSH="/home/vscode/.oh-my-zsh"
 
 alias cat="bat"
 
-plugins=(git ssh-agent)
+plugins=(git)
 ZSH_THEME="agnoster"
 
 source $ZSH/oh-my-zsh.sh
