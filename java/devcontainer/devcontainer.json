@@ -1,0 +1,17 @@
+{
+  "image": "philcompton/devcontainer-java:latest",
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "redhat.java",
+        "vscjava.vscode-lombok",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency"
+      ],
+      "settings": {
+        "terminal.integrated.shell.*": "/usr/bin/zsh"
+      }
+    }
+  }
+}
