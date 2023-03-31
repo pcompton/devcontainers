@@ -3,7 +3,12 @@
   "containerUser": "vscode",
   "customizations": {
     "vscode": {
-      "extensions": ["ms-python.vscode-pylance"],
+      "extensions": [
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers"
+      ],
       "settings": {
         "terminal.integrated.shell.*": "/usr/bin/zsh"
       }
