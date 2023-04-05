@@ -5,7 +5,7 @@ USER root
 ENV PATH="${PATH}:/opt/go/bin"
 ENV GOPATH="/home/vscode/go"
 ENV GOROOT="/opt/go"
-ENV GO_VERSION="1.20.2"
+ENV GO_VERSION="1.20.3"
 
 RUN wget https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz \
     && tar -C /opt/ -xzf go${GO_VERSION}.linux-amd64.tar.gz \
