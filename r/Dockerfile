@@ -9,4 +9,4 @@ USER vscode
 
 RUN pip3 install -U radian \
     && mkdir -p ~/R/x86_64-redhat-linux-gnu-library/4.2 \
-    && R -e "install.packages(c('languageserver','tidyverse'), repos = 'https://cran.microsoft.com/')"
+    && R -e "install.packages(c('languageserver','tidyverse'), repos = 'https://archive.linux.duke.edu/cran/')"
