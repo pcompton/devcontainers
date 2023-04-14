@@ -1,9 +1,9 @@
 FROM fedora:38
 
-ENV BUILD_DATE 20230407
+ENV BUILD_DATE 20230414
 
 RUN dnf update -y \
-    && dnf install -y bat curl exa fzf gcc git iputils jq libicu libuser make unzip wget xz zsh  \
+    && dnf install -y bat curl exa fzf gcc git iputils jq libicu libuser make ripgrep unzip wget xz zsh  \
     && dnf clean all -y
 
 RUN groupadd --gid 1000 vscode \
