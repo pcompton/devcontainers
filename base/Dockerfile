@@ -1,6 +1,6 @@
 FROM fedora:38
 
-ENV BUILD_DATE 20230421
+ENV BUILD_DATE 20230428
 
 RUN dnf update -y \
     && dnf install -y bat curl exa fzf gcc git iputils jq libicu libuser make ripgrep unzip wget xz zsh  \
