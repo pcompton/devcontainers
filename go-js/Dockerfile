@@ -10,8 +10,7 @@ RUN wget https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x6
     && mv /opt/node-v${NODE_VERSION}-linux-x64 /opt/node \
     && rm node-v${NODE_VERSION}-linux-x64.tar.xz
 
-USER vscode
-
 RUN npm install -g typescript \
     && npm install -g @angular/cli
 
+USER vscode
