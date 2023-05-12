@@ -2,8 +2,8 @@ FROM philcompton/devcontainer-base:latest
 
 USER root
 
-ENV RACKET_INSTALLER_URL https://download.racket-lang.org/releases/8.8/installers/racket-8.8-x86_64-linux-cs.sh
-ENV RACKET_VERSION 8.8
+ENV RACKET_INSTALLER_URL https://download.racket-lang.org/releases/8.9/installers/racket-8.9-x86_64-linux-cs.sh
+ENV RACKET_VERSION 8.9
 
 RUN curl --retry 5 -Ls "${RACKET_INSTALLER_URL}" > racket-install.sh \
     && echo "yes\n1\n" | sh racket-install.sh --create-dir --unix-style --dest /usr/ \
