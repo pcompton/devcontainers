@@ -1,9 +1,9 @@
-FROM fedora:38
+FROM archlinux/archlinux:base-devel
 
-ENV BUILD_DATE 20230519
+ENV BUILD_DATE 20230910
 
-RUN dnf update -y \
-    && dnf install -y bat curl exa gcc git iputils jq libicu libuser make ripgrep unzip wget xz zsh  \
+RUN pacman -Syu --noconfirm \
+    && pacman -S --noconfirm curl gcc git iputils libicu libuser make unzip wget xz zsh  \
     && dnf clean all -y
 
 RUN groupadd --gid 1000 vscode \
