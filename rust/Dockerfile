@@ -2,7 +2,8 @@ FROM philcompton/devcontainer-base:latest
 
 USER root
 
-RUN dnf install -y clang lldb llvm && dnf clean all -y
+RUN pacman -S clang lldb llvm --noconfirm \
+    && pacman -Scc --noconfirm
 
 USER vscode
 

@@ -1,10 +1,10 @@
 FROM archlinux/archlinux:base-devel
 
-ENV BUILD_DATE 20230910
+ENV BUILD_DATE 20230920
 
 RUN pacman -Syu --noconfirm \
-    && pacman -S --noconfirm curl gcc git iputils libicu libuser make unzip wget xz zsh  \
-    && dnf clean all -y
+    && pacman -S --noconfirm curl git libicu libuser unzip wget zsh  \
+    && pacman -Scc --noconfirm
 
 RUN groupadd --gid 1000 vscode \
     && useradd --uid 1000 --gid 1000 -m vscode -s /usr/bin/zsh

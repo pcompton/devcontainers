@@ -2,11 +2,11 @@ FROM philcompton/devcontainer-base:latest
 
 USER root
 
-RUN dnf install -y libRmath libRmath-devel python3-pip R-core R-core-devel R-R6  \
-    && dnf clean all -y
+RUN pacman -S gcc-fortran python python-pip r --noconfirm \
+    && pacman -Scc --noconfirm
+
+RUN R -e "install.packages(c('httpg', 'languageserver','tidyverse'), repos = 'https://archive.linux.duke.edu/cran/')"
 
 USER vscode
 
-RUN pip3 install -U radian \
-    && mkdir -p ~/R/x86_64-redhat-linux-gnu-library/4.3 \
-    && R -e "install.packages(c('languageserver','tidyverse'), repos = 'https://archive.linux.duke.edu/cran/')"
+RUN pip3 install -U radian 
