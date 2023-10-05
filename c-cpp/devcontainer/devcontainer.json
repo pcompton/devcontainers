@@ -3,7 +3,7 @@
   "containerUser": "vscode",
   "customizations": {
     "vscode": {
-      "extensions": ["ms-vscode.cpptools"],
+      "extensions": ["ms-vscode.cpptools", "ms-vscode.hexeditor"],
       "settings": {
         "terminal.integrated.shell.*": "/usr/bin/zsh"
       }
