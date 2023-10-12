@@ -1,10 +1,10 @@
-FROM archlinux/archlinux:base-devel
+FROM fedora:39
 
-ENV BUILD_DATE 20230920
+ENV BUILD_DATE 20231012
 
-RUN pacman -Syu --noconfirm \
-    && pacman -S --noconfirm curl git libicu libuser unzip wget zsh  \
-    && pacman -Scc --noconfirm
+RUN RUN dnf update -y \
+    && dnf install -y curl gcc git iputils libicu libuser make ripgrep unzip wget xz zsh  \
+    && dnf clean all -y
 
 RUN groupadd --gid 1000 vscode \
     && useradd --uid 1000 --gid 1000 -m vscode -s /usr/bin/zsh

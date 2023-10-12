@@ -2,12 +2,14 @@ FROM philcompton/devcontainer-base:latest
 
 USER root
 
-ENV RACKET_INSTALLER_URL https://download.racket-lang.org/releases/8.9/installers/racket-8.9-x86_64-linux-cs.sh
-ENV RACKET_VERSION 8.9
+ENV PATH="${PATH}:/opt/racket/bin"
+ENV RACKET_VERSION="8.10"
+ENV RACKET_SHA256="2c5fdc02787ba569f03d89cad6086a5c3be49045d58281e2db7fe31b43650eb7"
 
-RUN curl --retry 5 -Ls "${RACKET_INSTALLER_URL}" > racket-install.sh \
-    && echo "yes\n1\n" | sh racket-install.sh --create-dir --unix-style --dest /usr/ \
-    && rm racket-install.sh
+RUN wget https://download.racket-lang.org/releases/${RACKET_VERSION}/installers/racket-minimal-${RACKET_VERSION}-x86_64-linux-cs.tgz \
+    && echo "${RACKET_SHA256} racket-minimal-${RACKET_VERSION}-x86_64-linux-cs.tgz" | sha256sum -c - \
+    && tar -C /opt/ -xzf racket-minimal-${RACKET_VERSION}-x86_64-linux-cs.tgz \
+    && rm racket-minimal-${RACKET_VERSION}-x86_64-linux-cs.tgz
 
 ENV SSL_CERT_FILE="/etc/ssl/certs/ca-certificates.crt"
 ENV SSL_CERT_DIR="/etc/ssl/certs"
