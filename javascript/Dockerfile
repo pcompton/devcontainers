@@ -3,8 +3,8 @@ FROM philcompton/devcontainer-base:latest
 USER root
 
 ENV PATH="${PATH}:/opt/node/bin"
-ENV NODE_VERSION="20.8.0"
-ENV NODE_SHA256="66056a2acc368db142b8a9258d0539e18538ae832b3ccb316671b0d35cb7c72c"
+ENV NODE_VERSION="20.8.1"
+ENV NODE_SHA256="44096f6276cf735f3b25f47ffaaa1629b0abad4d9932c3a77d9dcdc743a3ff92"
 
 RUN wget https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz \
     && echo "${NODE_SHA256} node-v${NODE_VERSION}-linux-x64.tar.xz" | sha256sum -c - \
