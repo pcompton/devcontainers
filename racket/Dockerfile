@@ -23,4 +23,4 @@ RUN raco pkg config --set catalogs \
 
 USER vscode
 
-RUN raco pkg install chk chk-lib chk-doc html-parsing mcfly overeasy racket-langserver
+RUN raco pkg install --auto racket-langserver
