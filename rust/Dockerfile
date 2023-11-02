@@ -2,7 +2,7 @@ FROM philcompton/devcontainer-base:latest
 
 USER root
 
-RUN dnf install -y lldb llvm && dnf clean all -y
+RUN apt update -y && apt install -y lldb llvm && apt clean all -y
 
 USER vscode
 
