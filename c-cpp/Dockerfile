@@ -1,8 +1,8 @@
-FROM philcompton/devcontainer-base:latest
+FROM philcompton/devcontainer-base:20231107
 
 USER root
 
-RUN apt update -y && apt install -y cmake gdb libtool nasm && apt clean all -y
+RUN dnf upgrade -y && dnf install -y cmake gcc gcc-c++ gdb libtool make nasm && dnf clean all -y
 
 
 USER vscode
