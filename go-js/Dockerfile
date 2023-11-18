@@ -1,4 +1,4 @@
-FROM philcompton/devcontainer-go:20231107
+FROM philcompton/devcontainer-go:20231118
 
 USER root
 
