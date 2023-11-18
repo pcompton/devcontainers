@@ -1,9 +1,9 @@
 FROM fedora:39
 
-ENV BUILD_DATE 20231107
+ENV BUILD_DATE 20231118
 
 RUN dnf upgrade -y \
-    && dnf install -y curl git libicu72 libuser make ripgrep unzip wget xz zsh  \
+    && dnf install -y curl gawk git jq libicu72 libuser make ripgrep sed unzip wget xz zsh  \
     && dnf clean all -y
 
 RUN groupadd --gid 1000 vscode \
