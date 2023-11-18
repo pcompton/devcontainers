@@ -1,8 +1,8 @@
-FROM philcompton/devcontainer-base:latest
+FROM philcompton/devcontainer-base:20231118
 
 USER root
 
-RUN apt update -y && apt install -y lldb llvm && apt clean all -y
+RUN dnf install -y lldb llvm && dnf clean all -y
 
 USER vscode
 
