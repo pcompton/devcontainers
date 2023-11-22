@@ -7,7 +7,8 @@
         "redhat.java",
         "vscjava.vscode-lombok",
         "vscjava.vscode-maven",
-        "vscjava.vscode-java-dependency"
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-gradle"
       ],
       "settings": {
         "terminal.integrated.shell.*": "/usr/bin/zsh"
