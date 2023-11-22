@@ -1,4 +1,4 @@
-FROM philcompton/devcontainer-base:20231107
+FROM philcompton/dev-base:20231122
 
 USER root
 
