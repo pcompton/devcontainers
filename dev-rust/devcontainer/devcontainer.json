@@ -1,0 +1,12 @@
+{
+  "image": "philcompton/dev-rust:latest",
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": ["rust-lang.rust-analyzer"],
+      "settings": {
+        "terminal.integrated.shell.*": "/usr/bin/zsh"
+      }
+    }
+  }
+}

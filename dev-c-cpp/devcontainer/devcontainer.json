@@ -1,0 +1,12 @@
+{
+  "image": "philcompton/dev-c-cpp:latest",
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cpptools", "ms-vscode.hexeditor","ms-vscode.makefile-tools"],
+      "settings": {
+        "terminal.integrated.shell.*": "/usr/bin/zsh"
+      }
+    }
+  }
+}

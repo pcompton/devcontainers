@@ -1,0 +1,12 @@
+{
+  "image": "philcompton/dev-go:latest",
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go","ms-vscode.makefile-tools"],
+      "settings": {
+        "terminal.integrated.shell.*": "/usr/bin/zsh"
+      }
+    }
+  }
+}
