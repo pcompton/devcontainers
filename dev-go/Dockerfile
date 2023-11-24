@@ -2,9 +2,9 @@ FROM philcompton/dev-base:20231122
 
 USER root
 
-ENV PATH="${PATH}:/opt/go/bin"
 ENV GOPATH="/home/vscode/go"
 ENV GOROOT="/opt/go"
+ENV PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
 ENV GO_VERSION="1.21.4"
 ENV GO_SHA256="73cac0215254d0c7d1241fa40837851f3b9a8a742d0b54714cbdfb3feaf8f0af"
 
