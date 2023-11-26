@@ -1,11 +1,10 @@
-FROM philcompton/dev-base:20231122
+FROM philcompton/dev-base:20231126
 
 USER root
 
-RUN apt update -y \
-    && apt install gfortran python3-pip r-base -y \
-    && apt clean all -y \
-    && && R -e "install.packages(c('languageserver','tidyverse'), repos = 'https://archive.linux.duke.edu/cran/')"
+RUN dnf install gfortran python3-pip r-base -y \
+    && dnf clean all -y \
+    && R -e "install.packages(c('languageserver','tidyverse'), repos = 'https://archive.linux.duke.edu/cran/')"
 
 USER vscode
 
