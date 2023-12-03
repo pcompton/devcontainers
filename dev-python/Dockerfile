@@ -1,4 +1,4 @@
-FROM philcompton/dev-base:20231126
+FROM philcompton/dev-base:20231203
 
 USER root
 
