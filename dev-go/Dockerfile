@@ -5,8 +5,8 @@ USER root
 ENV GOPATH="/home/vscode/go"
 ENV GOROOT="/opt/go"
 ENV PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
-ENV GO_VERSION="1.21.4"
-ENV GO_SHA256="73cac0215254d0c7d1241fa40837851f3b9a8a742d0b54714cbdfb3feaf8f0af"
+ENV GO_VERSION="1.21.5"
+ENV GO_SHA256="e2bc0b3e4b64111ec117295c088bde5f00eeed1567999ff77bc859d7df70078e"
 
 RUN wget https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz \
     && echo "${GO_SHA256} go${GO_VERSION}.linux-amd64.tar.gz" | sha256sum -c - \
