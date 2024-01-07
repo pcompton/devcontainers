@@ -1,10 +1,10 @@
-FROM philcompton/dev-base:20231228
+FROM philcompton/dev-base:20240107
 
 USER root
 
 ENV PATH="${PATH}:/opt/racket/bin"
-ENV RACKET_VERSION="8.10"
-ENV RACKET_SHA256="2c5fdc02787ba569f03d89cad6086a5c3be49045d58281e2db7fe31b43650eb7"
+ENV RACKET_VERSION="8.11.1"
+ENV RACKET_SHA256="0b4b22ce67d4f8a529a16c27e445150859c90671c9582daf00b4df053e1f3a75"
 
 RUN wget https://download.racket-lang.org/releases/${RACKET_VERSION}/installers/racket-minimal-${RACKET_VERSION}-x86_64-linux-cs.tgz \
     && echo "${RACKET_SHA256} racket-minimal-${RACKET_VERSION}-x86_64-linux-cs.tgz" | sha256sum -c - \

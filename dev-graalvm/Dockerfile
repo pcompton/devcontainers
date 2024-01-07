@@ -1,4 +1,4 @@
-FROM philcompton/dev-java:20231228
+FROM philcompton/dev-java:20240107
 
 USER root
 

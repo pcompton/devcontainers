@@ -1,4 +1,4 @@
-FROM philcompton/dev-go:20231228
+FROM philcompton/dev-go:20240107
 
 USER root
 
