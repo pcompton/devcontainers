@@ -1,12 +1,12 @@
-FROM philcompton/dev-base:20240107
+FROM philcompton/dev-base:20240114
 
 USER root
 
 ENV GOPATH="/home/vscode/go"
 ENV GOROOT="/opt/go"
 ENV PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
-ENV GO_VERSION="1.21.5"
-ENV GO_SHA256="e2bc0b3e4b64111ec117295c088bde5f00eeed1567999ff77bc859d7df70078e"
+ENV GO_VERSION="1.21.6"
+ENV GO_SHA256="3f934f40ac360b9c01f616a9aa1796d227d8b0328bf64cb045c7b8c4ee9caea4"
 
 RUN wget https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz \
     && echo "${GO_SHA256} go${GO_VERSION}.linux-amd64.tar.gz" | sha256sum -c - \
