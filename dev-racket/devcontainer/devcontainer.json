@@ -3,10 +3,9 @@
   "containerUser": "vscode",
   "customizations": {
     "vscode": {
-      "extensions": ["evzen-wybitul.magic-racket"],
-      "settings": {
-        "terminal.integrated.shell.*": "/usr/bin/zsh"
-      }
+      "extensions": [
+        "evzen-wybitul.magic-racket"
+      ]
     }
   }
 }
