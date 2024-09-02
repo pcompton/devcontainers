@@ -3,10 +3,10 @@
   "containerUser": "vscode",
   "customizations": {
     "vscode": {
-      "extensions": ["reditorsupport.r"],
-      "settings": {
-        "terminal.integrated.shell.*": "/usr/bin/zsh"
-      }
+      "extensions": [
+        "reditorsupport.r",
+        "rdebugger.r-debugger"
+      ]
     }
   }
 }
