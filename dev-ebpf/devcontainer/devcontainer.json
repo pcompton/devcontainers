@@ -1,0 +1,14 @@
+{
+  "image": "philcompton/dev-ebpf:latest",
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go",
+        "ms-vscode.cpptools",
+        "ms-vscode.hexeditor",
+        "ms-vscode.makefile-tools"
+      ]
+    }
+  }
+}
