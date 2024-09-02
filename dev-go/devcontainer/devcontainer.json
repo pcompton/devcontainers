@@ -3,10 +3,10 @@
   "containerUser": "vscode",
   "customizations": {
     "vscode": {
-      "extensions": ["golang.go","ms-vscode.makefile-tools"],
-      "settings": {
-        "terminal.integrated.shell.*": "/usr/bin/zsh"
-      }
+      "extensions": [
+        "golang.go",
+        "ms-vscode.makefile-tools"
+      ]
     }
   }
 }
