@@ -4,7 +4,7 @@ USER root
 
 ENV PATH="${PATH}:/opt/racket/bin"
 ENV RACKET_VERSION="8.15"
-ENV RACKET_SHA256="5153727595b25cb57f0c9abc8ef3e6b292b2985def40f93acd6977e1a15521e3"
+ENV RACKET_SHA256="718353e1af52709d73c720c52533d177e27f79495f0a11c22b6718dfcc057088"
 
 RUN wget https://download.racket-lang.org/releases/${RACKET_VERSION}/installers/racket-minimal-${RACKET_VERSION}-x86_64-linux-cs.tgz \
     && echo "${RACKET_SHA256} racket-minimal-${RACKET_VERSION}-x86_64-linux-cs.tgz" | sha256sum -c - \
