@@ -1,0 +1,11 @@
+{
+  "image": "philcompton/dev-prolog:latest",
+  "containerUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rebornix.prolog"
+      ]
+    }
+  }
+}
