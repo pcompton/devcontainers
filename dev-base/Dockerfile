@@ -3,7 +3,7 @@ FROM fedora:41
 ENV BUILD_DATE="20250115"
 
 RUN dnf upgrade -y \
-    && dnf install -y curl gawk git jq libuser make ripgrep sed unzip wget xz \
+    && dnf install -y curl gawk git jq libuser make ripgrep sed unzip wget xz zsh \
     && dnf clean all -y
 
 RUN groupadd --gid 1000 vscode \
