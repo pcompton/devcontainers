@@ -1,4 +1,4 @@
-FROM philcompton/dev-base:20250102
+FROM philcompton/dev-base:20250115
 
 ENV GOPATH="/home/vscode/go"
 ENV GOROOT="/opt/go"

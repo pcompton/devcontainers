@@ -1,6 +1,6 @@
 FROM fedora:41
 
-ENV BUILD_DATE="20250102"
+ENV BUILD_DATE="20250115"
 
 RUN dnf upgrade -y \
     && dnf install -y curl gawk git jq libuser make ripgrep sed unzip wget xz \
