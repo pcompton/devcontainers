@@ -1,10 +1,10 @@
-FROM philcompton/dev-base:20250102
+FROM philcompton/dev-base:20250116
 
 USER root
 
 ENV PATH="${PATH}:/opt/node/bin"
-ENV NODE_VERSION="22.12.0"
-ENV NODE_SHA256="22982235e1b71fa8850f82edd09cdae7e3f32df1764a9ec298c72d25ef2c164f"
+ENV NODE_VERSION="22.13.0"
+ENV NODE_SHA256="3ff0d57063c33313d73d0bdcebc4c778ad6be948234584694a042c6fe57164f6"
 
 RUN wget https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-x64.tar.xz \
     && echo "${NODE_SHA256} node-v${NODE_VERSION}-linux-x64.tar.xz" | sha256sum -c - \
