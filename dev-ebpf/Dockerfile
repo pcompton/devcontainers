@@ -1,10 +1,10 @@
-FROM philcompton/dev-base:20250116
+FROM philcompton/dev-base:20250219
 
 ENV GOPATH="/home/vscode/go"
 ENV GOROOT="/opt/go"
 ENV PATH="${PATH}:${GOROOT}/bin:${GOPATH}/bin"
-ENV GO_VERSION="1.23.4"
-ENV GO_SHA256="6924efde5de86fe277676e929dc9917d466efa02fb934197bc2eba35d5680971"
+ENV GO_VERSION="1.24.0"
+ENV GO_SHA256="dea9ca38a0b852a74e81c26134671af7c0fbe65d81b0dc1c5bfe22cf7d4c8858"
 
 USER root
 
