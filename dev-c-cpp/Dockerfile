@@ -1,4 +1,4 @@
-FROM philcompton/dev-base:20250220
+FROM philcompton/dev-base:latest
 
 USER root
 

@@ -1,4 +1,4 @@
-FROM philcompton/dev-go:20250220
+FROM philcompton/dev-go:latest
 
 USER root
 
