@@ -3,7 +3,7 @@ FROM registry.fedoraproject.org/fedora:42
 ENV BUILD_DATE="20250404"
 
 RUN dnf upgrade -y \
-    && dnf install -y bat curl gawk git jq just libuser make ripgrep rpmdevtools sed unzip wget xh xz zsh \
+    && dnf install -y bat curl gawk git jq just libuser make nu ripgrep rpmdevtools sed unzip wget xh xz zsh \
     && dnf clean all -y
 
 RUN groupadd --gid 1000 vscode \
