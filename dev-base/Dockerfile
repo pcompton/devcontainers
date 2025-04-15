@@ -1,6 +1,6 @@
 FROM registry.fedoraproject.org/fedora:42
 
-ENV BUILD_DATE="20250404"
+ENV BUILD_DATE="20250415"
 
 RUN dnf upgrade -y \
     && dnf install -y bat curl gawk git jq just libuser make ripgrep rpmdevtools sed unzip wget xh xz zsh \
